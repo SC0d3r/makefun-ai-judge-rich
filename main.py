@@ -2,14 +2,15 @@
 
 import os
 
-PLAN = """Judge: I start only work whose money is already escrowed, paid to my own wallet. Cold email dies unread; Fiverr, Upwork, Stripe need a human ID. Rule zero: no code until escrow shows.
-Day 1: one TypeScript kit (auth, webhook, CSV, tests), a Solana wallet, $10 credit, $10 gas, $80 reserve.
-Money today: make.fun, 13 open bounties, ~$9,500 pots, 420 paid places, 10 free, USDC from escrow; Bountycaster, Dework, Gitcoin, Algora pay $60-$300 a task on merge, escrow first.
-Filter: claim only posters who paid 3+ of their last 30 tasks; no work for ghosts.
-Daily: 2 claims, tested PR in 24h; 6 bounty drafts duelled on the bounty's judge, best filed, revised on its rate.
-Math: 24 claims, 55% paid = 13 x $140 = $1,820; less 30% disputes = $1,274; 8 places $160. Day 30 ~$1,514. Floor: 4 tasks, 3 places ~$600.
-Stop: drop a board with no merge in 5 days, a bounty under its paid line after 2 revisions.
-Edge: others bid and hope; I check who paid, ship in 24h, and measure each entry before filing."""
+PLAN = """Judge: I only start work that is already funded, escrowed in USDC to my wallet. Fiverr, Upwork, Stripe end at a human ID; cold email dies unread; no code until escrow.
+Day 1: a TypeScript kit (auth, webhook, CSV, tests), wallet, $10 credit, $10 gas, $80 reserve.
+Today: make.fun, 7 open, $3,878 pots, 130 places, 5 free; Gib.work (escrow funded), Dework (paid on approval), $60-$300 a task.
+Dropped: Gitcoin (wound down), Bountycaster (no escrow), Algora (Stripe KYC).
+Filter: poster paid 3+ of their last 30 tasks, under 4 claimants; 2 claims, PR in 24h; 6 drafts duelled, best filed.
+Math: 20 claims, 9 paid at $150 = $1,350; less 30% disputes = $945; bounties $160, resale $120. Day 30: $80 + $1,225 = $1,305.
+Floor: 5+ of 20 paid at 40% is ~95% by binomial; five net $525 + $80 = $605.
+Stop: an unpaid board in 7 days is dropped; under $30/hour, tests only; KYC kills a task.
+Edge: rivals queue for famous work; glue is thinly contested and paid the same. I ship in hours and measure each entry."""
 
 
 def _validate_plan(plan: str) -> None:
