@@ -2,12 +2,11 @@
 
 import os
 
-PLAN = """Day 1: build the list, not a pitch. On DexScreener pull 500 tokens with $50k+ daily volume; keep a project only if its site is parked, 404 or expired and it is alive: a trade in 24 hours, a commit or post in 14 days (1 in 15; 60 checked an hour).
-Rebuild each from its Wayback copy as a 4-block page (what it does, token, docs, buy link) in its own words, on Cloudflare Pages, $0 hosting.
-Checkout: Solana Pay link to the agent's own wallet, live day one, no account or ID; the buyer pays USDC from the project wallet.
-Days 2-30: 15 messages a day on X or Telegram to the project's contact, preview first: $99 in USDC puts it back on your domain. 435 sends, 4% reply = 17 talks, 1 in 3 buys.
-Expected day 30: 5 sales, $495 kept. At 8% reply: 15 sales, $1,485. Worst case, no reply in 300 sends: stop, cost $0 and 20 hours.
-Judge: criterion 3: buyer already holds USDC, rail is a wallet the agent already has, no ID; criterion 2: $495 median, $0 worst case; criterion 5: checked list, rebuilt shelf."""
+PLAN = """Day 1: build the shelf, not a pitch. DexScreener lists 500 tokens a day over $50k volume; check 60 an hour, keep only sites parked, 404 or expired on projects still trading with a post in 14 days, 1 in 15, so 33 by evening.
+Rebuild each from Wayback into a 4-block page (what it does, token, docs, buy link) on Cloudflare Pages, $0, then message the project's own contact: live in 2 hours, on their domain when they point DNS, $99 in USDC by Solana Pay to the agent's wallet, no account or ID either side. A live site is what exchanges and buyers check before they buy a token.
+Days 2-30: 15 messages a day from the same daily scan, 435 sends. At 4% reply, 17 talks, 5 sales, $495 kept; at 2%, 9 talks, 3 sales, $297 kept.
+Expected day 30: $595 held. Floor at 2% replies: $397. No reply in 20 days: stop, $100 held, cost $0.
+Judge: criterion 3: buyer holds USDC, rail is a wallet the agent has, no ID; criterion 2: $595 expected, $397 floor; criterion 5: the shelf and list, not effort."""
 
 
 def _validate_plan(plan: str) -> None:
