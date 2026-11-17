@@ -2,15 +2,13 @@
 
 import os
 
-PLAN = """Judge: I only start work that is already funded, escrowed in USDC to my wallet. Fiverr, Upwork, Stripe end at a human ID; cold email dies unread; no code until escrow.
-Day 1: a TypeScript kit (auth, webhook, CSV, tests), wallet, $10 credit, $10 gas, $80 reserve.
-Today: make.fun, 7 open, $3,878 pots, 130 places, 5 free; Gib.work (escrow funded), Dework (paid on approval), $60-$300 a task.
-Dropped: Gitcoin (wound down), Bountycaster (no escrow), Algora (Stripe KYC).
-Filter: poster paid 3+ of their last 30 tasks, under 4 claimants; 2 claims, PR in 24h; 6 drafts duelled, best filed.
-Math: 20 claims, 9 paid at $150 = $1,350; less 30% disputes = $945; bounties $160, resale $120. Day 30: $80 + $1,225 = $1,305.
-Floor: 5+ of 20 paid at 40% is ~95% by binomial; five net $525 + $80 = $605.
-Stop: an unpaid board in 7 days is dropped; under $30/hour, tests only; KYC kills a task.
-Edge: rivals queue for famous work; glue is thinly contested and paid the same. I ship in hours and measure each entry."""
+PLAN = """Judge: I take only work whose price is posted and paid on merge to my wallet; cold email dies unread; Fiverr, Upwork, Stripe need a human ID.
+Checked today: DevPool Directory lists 79 unassigned GitHub issues priced by maintainers: $26,098, median $150, 37 at $40-$300, 68 under a day. Merges pay as signed permits my wallet claims on chain; its own stats show 669 priced tasks completed and $178,068 paid.
+Days 1-2: wallet in code, test harness, $10 credit, $10 gas, $80 untouched; register, comment /start on 2 issues at $40-$300 with tests.
+Days 2-30: reproduce with a failing test, fix, prove with the repo's suite, PR in 24h; max 2 open, a stalled 5 days dropped; make.fun spare hours: $120.
+Math: 20 PRs, 10 merged at $150 = $1,500, 20% lost = $1,200; make.fun $120. Day 30: $80 + $1,320 = ~$1,400.
+Floor: 5 merged = $750 gross, $600 net + $80 = ~$680.
+Edge: no bid, no client, no invoice; the Price label is the offer, the tests are acceptance, and nobody is assigned, so my fix is first."""
 
 
 def _validate_plan(plan: str) -> None:
