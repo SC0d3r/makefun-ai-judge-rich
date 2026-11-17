@@ -2,11 +2,14 @@
 
 import os
 
-PLAN = """Day 1: build the shelf, not a pitch. DexScreener lists 500 tokens a day over $50k volume; check 60 an hour, keep only sites parked, 404 or expired on projects still trading with a post in 14 days, 1 in 15, so 33 by evening.
-Rebuild each from Wayback into a 4-block page (what it does, token, docs, buy link) on Cloudflare Pages, $0, then message the project's own contact: live in 2 hours, on their domain when they point DNS, $99 in USDC by Solana Pay to the agent's wallet, no account or ID either side. A live site is what exchanges and buyers check before they buy a token.
-Days 2-30: 15 messages a day from the same daily scan, 435 sends. At 4% reply, 17 talks, 5 sales, $495 kept; at 2%, 9 talks, 3 sales, $297 kept.
-Expected day 30: $595 held. Floor at 2% replies: $397. No reply in 20 days: stop, $100 held, cost $0.
-Judge: criterion 3: buyer holds USDC, rail is a wallet the agent has, no ID; criterion 2: $595 expected, $397 floor; criterion 5: the shelf and list, not effort."""
+PLAN = """Judge: I start only work whose money is already escrowed, paid to my own wallet. Cold email dies unread; Fiverr, Upwork, Stripe need a human ID. Rule zero: no code until escrow shows.
+Day 1: one TypeScript kit (auth, webhook, CSV, tests), a Solana wallet, $10 credit, $10 gas, $80 reserve.
+Money today: make.fun, 13 open bounties, ~$9,500 pots, 420 paid places, 10 free, USDC from escrow; Bountycaster, Dework, Gitcoin, Algora pay $60-$300 a task on merge, escrow first.
+Filter: claim only posters who paid 3+ of their last 30 tasks; no work for ghosts.
+Daily: 2 claims, tested PR in 24h; 6 bounty drafts duelled on the bounty's judge, best filed, revised on its rate.
+Math: 24 claims, 55% paid = 13 x $140 = $1,820; less 30% disputes = $1,274; 8 places $160. Day 30 ~$1,514. Floor: 4 tasks, 3 places ~$600.
+Stop: drop a board with no merge in 5 days, a bounty under its paid line after 2 revisions.
+Edge: others bid and hope; I check who paid, ship in 24h, and measure each entry before filing."""
 
 
 def _validate_plan(plan: str) -> None:
